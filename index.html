@@ -86,6 +86,53 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--azul);bo
 .toast{position:fixed;left:50%;bottom:96px;transform:translateX(-50%);background:#2b3550;color:#fff;padding:10px 16px;border-radius:10px;font-size:15px;opacity:0;transition:opacity .2s;pointer-events:none;z-index:50;max-width:90vw;text-align:center}
 .toast.on{opacity:1}
 .erro{border-color:var(--perigo)!important}
+.navpassos .dentro-col{max-width:760px;margin:0 auto}
+.cartao.instalar{border:2px solid var(--ouro);background:#fffaf0;margin-top:0}
+.cartao.instalar h2{font-size:23px}
+.dois-botoes{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.dois-botoes .btn:first-child{background:#fff;color:var(--azul-esc);border:1.5px solid var(--azul)}
+@media (max-width:480px){.dois-botoes{grid-template-columns:1fr}}
+.etiqueta{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;border-radius:6px;padding:2px 6px;margin-right:6px;vertical-align:1px}
+.etiqueta.orc{background:#f5ecd9;color:#8a6a2c}
+.etiqueta.ctr{background:var(--azul-claro);color:var(--azul-esc)}
+.etiqueta.ok{background:#e3f1e7;color:var(--ok)}
+.folha .tit-orc{text-align:center;font-weight:bold;font-size:15pt;letter-spacing:.06em;margin:0 0 1em}
+.folha .linha-orc{text-align:left;margin:0 0 .25em}
+.folha .item2{display:flex;justify-content:space-between;gap:12px;margin:0 0 .25em}
+.folha .item2 span:last-child{white-space:nowrap}
+.folha .total-orc{font-weight:bold;font-size:13pt;margin-top:.8em;text-align:left}
+.folha .rodape{text-align:center;color:#555;font-size:10pt;margin-top:2em}
+.barra-soma{font-size:14px;color:var(--azul-esc);text-align:center;margin:-2px 0 8px}
+.barra-soma:empty{display:none}
+.barra-soma b{font-size:15px}
+.linha-titulo{font-family:"Cormorant Garamond",Georgia,serif;font-size:22px;font-weight:600;color:var(--ouro);margin:16px 0 6px;border-bottom:1px solid #eadfca;padding-bottom:2px}
+.doce{border:1.5px solid #e1e8f5;border-radius:14px;margin-bottom:8px;background:#fff;overflow:hidden}
+.doce.on{border-color:var(--azul);background:var(--azul-claro)}
+.doce-top{display:flex;align-items:center;gap:12px;padding:8px 12px 8px 8px;cursor:pointer}
+.doce-top img{width:62px;height:62px;border-radius:10px;object-fit:cover;flex:0 0 62px;background:#eee}
+.doce-info{flex:1;min-width:0}
+.doce-info b{display:block;font-size:16px;line-height:1.2}
+.doce-info span{font-size:14px;color:var(--suave)}
+.doce-top input[type=checkbox]{width:26px;height:26px;min-height:0;margin:0;flex:0 0 26px;accent-color:var(--azul)}
+.doce-qtd{display:flex;flex-wrap:wrap;align-items:end;gap:8px 12px;padding:0 12px 12px 82px}
+@media (max-width:420px){.doce-qtd{padding-left:12px}}
+.qtd-ctrl{display:flex;align-items:center;gap:6px}
+.qtd-ctrl button{width:44px;height:44px;border-radius:10px;border:1.5px solid var(--azul-borda);background:#fff;font:600 20px/1 inherit;color:var(--azul-esc);cursor:pointer}
+.qtd-ctrl input{width:78px;text-align:center;margin:0;font-weight:600}
+.doce-qtd .preco-un{width:120px}
+.doce-qtd .preco-un input{margin-top:3px;min-height:40px;padding:8px 10px}
+.doce-qtd .rot{font-size:12px;color:var(--suave);display:block}
+.doce-qtd .sub{font-weight:600;color:var(--azul-esc);padding-bottom:10px}
+.doce-qtd .alerta{flex-basis:100%;font-size:13px;color:#a26b17;margin-top:-2px}
+.toggle{display:flex;align-items:center;gap:10px;font-weight:600;margin-top:16px;cursor:pointer}
+.toggle input{width:24px;height:24px;min-height:0;margin:0;accent-color:var(--azul)}
+.conta{background:var(--azul-claro);border-radius:12px;padding:12px 14px}
+.conta div{display:flex;justify-content:space-between;gap:10px;padding:3px 0;font-size:15px}
+.conta .sub-total{border-top:1px solid var(--azul-borda);margin-top:4px;padding-top:7px;font-weight:700}
+.conta .desc{color:var(--ok)}
+.total-final{margin-top:16px;border:2px solid var(--azul);border-radius:14px;padding:14px;text-align:center}
+.total-final span{display:block;font-size:14px;color:var(--suave)}
+.total-final b{font-size:30px;color:var(--azul-esc)}
 
 /* ===== Contrato ===== */
 .barra-contrato{display:flex;gap:10px;flex-wrap:wrap;margin:6px 0 14px}
@@ -112,6 +159,41 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--azul);bo
 .folha ul.itens{list-style:none;padding:0;margin:1em 0 1.6em}
 .folha ul.itens li{margin:0 0 .25em}
 
+/* orçamento no visual do cardápio */
+.folha.folha-orc{background:#182033;padding:0;max-width:794px}
+.orc{padding:34px 40px 26px;color:#e3eaf7;font-family:"FdpErasLight",Arial,sans-serif}
+@media (max-width:560px){.orc{padding:22px 14px}}
+.orc-logo{width:120px;height:120px;border-radius:50%;background:#fff;margin:0 auto;display:flex;align-items:center;justify-content:center}
+.orc-logo img{width:104px}
+.orc-tit{font-family:"FdpVibes",cursive;font-size:64px;line-height:1.1;text-align:center;margin:10px 0 4px}
+.orc-tit:after{content:"";display:block;width:180px;height:1.5px;background:#f9b234;margin:6px auto 0}
+.orc-info{background:#283147;border-radius:12px;padding:14px 18px;margin:20px 0 22px;display:grid;grid-template-columns:1fr 1fr;gap:12px 20px}
+.orc-info span{display:block;font-family:"FdpErasDemi",Arial,sans-serif;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#f9b234}
+.orc-info b{font-weight:normal;font-size:17px}
+.orc-tab{width:100%;border-collapse:collapse}
+.orc-tab th{font-family:"FdpErasDemi",Arial,sans-serif;font-weight:normal;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#f9b234;text-align:left;border-bottom:1.5px solid #f9b234;padding:6px 4px}
+.orc-tab th:nth-child(n+3),.orc-tab td.v{text-align:right}
+.folha .orc-tab{margin:0;font-size:inherit}
+.folha .orc-tab td,.folha .orc-tab th{border:0}
+.folha .orc-tab th{border-bottom:1.5px solid #f9b234}
+.folha .orc-tab td{border-bottom:1px solid #3a4560;padding:8px 4px;vertical-align:middle}
+.orc-tab td.q{font-family:"FdpErasDemi",Arial,sans-serif;font-size:16px;width:12%}
+.orc-tab td.n{font-family:"FdpVibes",cursive;font-size:27px;line-height:1.15}
+.orc-tab td.n small{display:block;font-family:"FdpErasLight",Arial,sans-serif;font-size:12px;line-height:1.3;opacity:.9}
+.orc-tab td.v{font-family:"FdpErasDemi",Arial,sans-serif;font-size:16px;color:#f9b234;white-space:nowrap}
+@media (max-width:560px){.orc-tab td.n{font-size:21px}.orc-tab td.v,.orc-tab td.q{font-size:13px}.orc-info{grid-template-columns:1fr}}
+.orc-tot{background:#283147;border-radius:12px;padding:12px 18px;margin:20px 0 20px auto;max-width:330px}
+.orc-tot div{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:3px 0}
+.orc-tot b{font-family:"FdpErasDemi",Arial,sans-serif;font-weight:normal;color:#f9b234;font-size:16px}
+.orc-tot .grande{border-top:1px solid #3a4560;margin-top:4px;padding-top:6px}
+.orc-tot .grande span{font-family:"FdpVibes",cursive;font-size:36px}
+.orc-tot .grande b{font-size:26px}
+.orc-inst{background:#283147;border-radius:12px;padding:12px 18px}
+.orc-inst .t{font-family:"FdpVibes",cursive;font-size:32px}
+.orc-inst ul{margin:4px 0 0;padding-left:18px;font-size:14px;line-height:1.45}
+.orc-inst li::marker{color:#f9b234}
+.orc-rod{text-align:center;color:#aab4c8;font-size:12px;margin-top:22px}
+
 @media print{
   @page{size:A4;margin:3cm 2cm 2cm 3cm}
   body{background:#fff}
@@ -133,17 +215,25 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--azul);bo
 
 <!-- ===== INÍCIO ===== -->
 <section class="tela ativa" id="tela-inicio">
-  <button class="btn grande" onclick="novoContrato()">+ Gerar novo contrato</button>
-  <div class="cartao">
-    <h2>Contratos salvos</h2>
-    <p class="dica">Toque em <b>Editar</b> para mudar um contrato, ou em <b>Ver</b> para abrir o contrato pronto.</p>
-    <input class="busca" id="busca" type="search" placeholder="Buscar por nome ou data…" oninput="listar()">
-    <ul class="lista" id="lista"></ul>
-  </div>
-  <div class="cartao" id="cartao-instalar" style="display:none">
-    <h2>Colocar na tela inicial</h2>
+  <div class="cartao instalar" id="cartao-instalar" style="display:none">
+    <h2>Instale o Gerador como aplicativo</h2>
     <p class="dica" id="instalar-txt"></p>
     <button class="btn" id="btn-instalar" style="display:none" onclick="instalar()">Instalar o Gerador de Contrato</button>
+  </div>
+  <div class="dois-botoes">
+    <button class="btn grande" onclick="novoOrcamento()">+ Fazer orçamento</button>
+    <button class="btn grande" onclick="novoContrato()">+ Gerar novo contrato</button>
+  </div>
+  <div class="cartao">
+    <h2>Salvos</h2>
+    <p class="dica">Toque em <b>Ver</b> para abrir o documento pronto, ou em <b>Editar</b> para mudar. Um orçamento aprovado vira contrato em <b>Virar contrato</b>.</p>
+    <div class="seg" id="seg-lista" style="margin-bottom:10px">
+      <button data-v="todos" onclick="setLista('todos')">Tudo</button>
+      <button data-v="orcamento" onclick="setLista('orcamento')">Orçamentos</button>
+      <button data-v="contrato" onclick="setLista('contrato')">Contratos</button>
+    </div>
+    <input class="busca" id="busca" type="search" placeholder="Buscar por nome ou data…" oninput="listar()">
+    <ul class="lista" id="lista"></ul>
   </div>
   <div class="cartao">
     <h2>Cópia de segurança</h2>
@@ -157,8 +247,22 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--azul);bo
 
 <!-- ===== FORMULÁRIO ===== -->
 <section class="tela" id="tela-form">
-  <div class="passos" id="passos"><span></span><span></span><span></span><span></span></div>
+  <div class="passos" id="passos"></div>
   <div class="rotulo-passo" id="rotulo-passo"></div>
+
+  <!-- Orçamento: dados -->
+  <div class="cartao passo" data-passo="0">
+    <h2>Dados do orçamento</h2>
+    <p class="dica">Só o básico. O resto entra quando o orçamento virar contrato.</p>
+    <div class="grade">
+      <label class="campo inteira">Nome da noiva (ou cliente)<input data-k="cli.nome" autocomplete="off" autocapitalize="words"></label>
+      <label class="campo">Data do evento<input data-k="ev.data" type="date"></label>
+      <label class="campo">Número de convidados<input data-k="ev.conv" type="number" inputmode="numeric" min="0"></label>
+      <label class="campo inteira">Local<input data-k="ev.local" autocapitalize="words" placeholder="Ex.: Chácara Havaí, ou cidade a 3h de Goiânia"></label>
+      <label class="campo">Quantidade indicada de doces<input data-k="orc.indicada" type="number" inputmode="numeric" min="0"></label>
+      <label class="campo">Telefone <span class="opc">(opcional)</span><input data-k="cli.tel" inputmode="tel" data-mask="tel"></label>
+    </div>
+  </div>
 
   <!-- Passo 1 -->
   <div class="cartao passo" data-passo="1">
@@ -204,38 +308,64 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--azul);bo
 
   <!-- Passo 3 -->
   <div class="cartao passo" data-passo="3">
-    <h2>Doces escolhidos</h2>
-    <p class="dica">Uma linha para cada doce. O valor de cada um é opcional: serve só pra você fazer a conta, não aparece no contrato.</p>
+    <h2>Doces do cardápio</h2>
+    <p class="dica">Marque os doces que a noiva escolheu e coloque a quantidade. O preço vem do cardápio; se mudou, é só corrigir no doce marcado.</p>
+    <input type="search" id="busca-doce" placeholder="Buscar doce…" oninput="renderCardapio()" style="margin-bottom:10px">
+    <div class="chips" id="filtro-linhas"></div>
+    <div id="lista-cardapio"></div>
+  </div>
+
+  <!-- Passo 4 -->
+  <div class="cartao passo" data-passo="4">
+    <h2>Fora do cardápio</h2>
+    <p class="dica">Doces novos que ainda não estão no cardápio, bolo, bem-casado ou qualquer outro item. O valor entra na conta do contrato.</p>
     <div class="chips">
       <button class="chip" onclick="addItem({un:'kg',desc:'de bolo de corte sabor '})">+ Bolo de corte</button>
       <button class="chip" onclick="addItem({un:'un',desc:'bem casados com recheio de doce de leite finalizados com papel crepom cor branca e fita de cetim na cor '})">+ Bem-casado</button>
       <button class="chip" onclick="addItem({})">+ Outro doce</button>
     </div>
     <div id="itens"></div>
-    <button class="btn sec peq" onclick="addItem({})">+ Adicionar doce</button>
+    <button class="btn sec peq" onclick="addItem({})">+ Adicionar item</button>
 
-    <h2 style="font-size:21px;margin-top:20px">Entrega e montagem</h2>
+    <h2 style="font-size:21px;margin-top:22px">Entrega e montagem</h2>
     <div class="checks">
       <label><input type="checkbox" data-k="srv.entrega"> Entrega</label>
       <label><input type="checkbox" data-k="srv.montagem"> Montagem de mesa</label>
     </div>
     <div class="grade" style="margin-top:10px">
-      <label class="campo">Valor da entrega <span class="opc">(opcional)</span><input data-k="srv.vEntrega" inputmode="decimal" data-mask="moeda" placeholder="R$ 0,00"></label>
-      <label class="campo">Valor da montagem <span class="opc">(opcional)</span><input data-k="srv.vMontagem" inputmode="decimal" data-mask="moeda" placeholder="R$ 0,00"></label>
+      <label class="campo">Valor da entrega<input data-k="srv.vEntrega" inputmode="decimal" data-mask="moeda" placeholder="R$ 0,00"></label>
+      <label class="campo">Valor da montagem<input data-k="srv.vMontagem" inputmode="decimal" data-mask="moeda" placeholder="R$ 0,00"></label>
     </div>
-    <div class="resumo" id="resumo-doces"></div>
   </div>
 
-  <!-- Passo 4 -->
-  <div class="cartao passo" data-passo="4">
-    <h2>Valor e pagamento</h2>
-    <p class="dica">O valor por extenso é escrito sozinho.</p>
+  <!-- Passo 5 -->
+  <div class="cartao passo" data-passo="5">
+    <h2 id="titulo-valor">Valor do contrato</h2>
+    <p class="dica">A conta é feita sozinha com o que você escolheu.</p>
+    <div class="conta" id="conta"></div>
+
+    <label class="toggle"><input type="checkbox" data-k="desc.on"> Aplicar desconto</label>
+    <div id="bloco-desconto" class="grade" style="margin:8px 0 4px">
+      <div class="campo"><label class="campo" style="margin:0">Tipo de desconto</label>
+        <div class="seg" id="seg-desc">
+          <button data-v="pct" onclick="setDesc('pct')">Porcentagem</button>
+          <button data-v="valor" onclick="setDesc('valor')">Valor em R$</button>
+        </div>
+      </div>
+      <label class="campo" id="campo-desc-pct">Desconto (%)<input data-k="desc.pct" type="number" inputmode="decimal" min="0" max="100" placeholder="Ex.: 10"></label>
+      <label class="campo" id="campo-desc-valor">Desconto (R$)<input data-k="desc.valor" inputmode="decimal" data-mask="moeda" placeholder="R$ 0,00"></label>
+    </div>
+
+    <label class="toggle"><input type="checkbox" data-k="pg.manualOn"> Usar outro valor final (arredondar)</label>
+    <label class="campo" id="campo-manual" style="margin-top:8px">Valor final combinado<input data-k="pg.manual" inputmode="decimal" data-mask="moeda" placeholder="R$ 0,00"></label>
+
+    <div class="total-final"><span id="rot-total">Valor total do contrato</span><b id="total-final">R$ 0,00</b><div class="extenso" id="extenso-total"></div></div>
+
+    <div id="so-orcamento"></div>
+
+    <div id="so-contrato">
+    <h2 style="font-size:21px;margin-top:22px">Pagamento</h2>
     <div class="grade">
-      <label class="campo inteira">Valor total do contrato
-        <input data-k="pg.total" inputmode="decimal" data-mask="moeda" placeholder="R$ 0,00">
-        <div class="extenso" id="extenso-total"></div>
-        <button class="btn fant peq" id="btn-usar-soma" style="display:none;padding-left:0" onclick="usarSoma()"></button>
-      </label>
       <div class="campo inteira"><label class="campo" style="margin:0">Entrada (sinal)</label>
         <div class="seg" id="seg-entrada">
           <button data-v="pct" onclick="setEntrada('pct')">Porcentagem</button>
@@ -256,20 +386,24 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--azul);bo
       <label class="campo">Número do contrato <span class="opc">(opcional)</span><input data-k="num"></label>
     </div>
     <div class="resumo" id="resumo-pg"></div>
+    </div>
   </div>
 
-  <div class="navpassos"><div class="dentro">
+  <div class="navpassos"><div class="dentro-col">
+    <div class="barra-soma" id="barra-soma"></div>
+    <div class="dentro">
     <button class="btn sec" id="btn-voltar" onclick="voltarPasso()">Voltar</button>
     <button class="btn" id="btn-avancar" onclick="avancarPasso()">Próximo</button>
-  </div></div>
+  </div></div></div>
 </section>
 
 <!-- ===== CONTRATO ===== -->
 <section class="tela" id="tela-contrato">
   <div class="barra-contrato">
     <button class="btn grande" onclick="compartilharPDF()">Compartilhar PDF</button>
+    <button class="btn" id="btn-virar" onclick="virarContrato(atualId)" style="display:none">Virar contrato</button>
     <button class="btn sec" onclick="baixarPDF()">Baixar PDF</button>
-    <button class="btn sec" onclick="editar(atualId, 4)">Editar</button>
+    <button class="btn sec" onclick="editar(atualId, 5)">Editar</button>
     <button class="btn sec" onclick="irInicio()">Início</button>
   </div>
   <p class="aviso">Em <b>Compartilhar PDF</b>, escolha o WhatsApp (ou outro app) e depois a pessoa.</p>
@@ -290,6 +424,9 @@ const SUGESTOES = ["alpino de avelã","bombom de caramelo salgado","brigadeiro d
 document.getElementById("sugestoes").innerHTML = SUGESTOES.map(s=>`<option value="${s}">`).join("");
 
 const FORMAS = ["PIX","Transferência","Cartão de crédito","Boleto","Dinheiro"];
+const CARDAPIO = [{"id": "d00", "nome": "Ouriço de Coco", "preco": 2.9, "linha": "Aveludado", "foto": "cardapio/d00.jpg"}, {"id": "d01", "nome": "Limão Siciliano", "preco": 3.1, "linha": "Aveludado", "foto": "cardapio/d01.jpg"}, {"id": "d02", "nome": "Brigadeiro de Churros", "preco": 2.75, "linha": "Aveludado", "foto": "cardapio/d02.jpg"}, {"id": "d03", "nome": "Brigadeiro Gourmet", "preco": 2.9, "linha": "Aveludado", "foto": "cardapio/d03.jpg"}, {"id": "d04", "nome": "Brigadeiro de Café", "preco": 3, "linha": "Aveludado", "foto": "cardapio/d04.jpg"}, {"id": "d05", "nome": "Brigadeiro de Coco", "preco": 2.5, "linha": "Aveludado", "foto": "cardapio/d05.jpg"}, {"id": "d06", "nome": "Brigadeiro de Ninho", "preco": 2.5, "linha": "Aveludado", "foto": "cardapio/d06.jpg"}, {"id": "d07", "nome": "Brigadeiro Dois Amores", "preco": 3.1, "linha": "Aveludado", "foto": "cardapio/d07.jpg"}, {"id": "d08", "nome": "Flor de Damasco", "preco": 4.8, "linha": "Encanto", "foto": "cardapio/d08.jpg"}, {"id": "d09", "nome": "Alpino de Avelã", "preco": 4.2, "linha": "Encanto", "foto": "cardapio/d09.jpg"}, {"id": "d10", "nome": "Coração de Noivos", "preco": 5.2, "linha": "Encanto", "foto": "cardapio/d10.jpg"}, {"id": "d11", "nome": "Trufa de Goiabada", "preco": 5.3, "linha": "Encanto", "foto": "cardapio/d11.jpg"}, {"id": "d12", "nome": "Copinho Ninho com Nutella", "preco": 3.9, "linha": "Encanto", "foto": "cardapio/d12.jpg"}, {"id": "d13", "nome": "Sakura de Maçã Verde", "preco": 5.5, "linha": "Encanto", "foto": "cardapio/d13.jpg"}, {"id": "d14", "nome": "Flor Brûlée", "preco": 3.3, "linha": "Encanto", "foto": "cardapio/d14.jpg"}, {"id": "d15", "nome": "Bowl de Cookies", "preco": 3.6, "linha": "Encanto", "foto": "cardapio/d15.jpg"}, {"id": "d16", "nome": "Núbia de Ovomaltine", "preco": 4.1, "linha": "Encanto", "foto": "cardapio/d16.jpg"}, {"id": "d17", "nome": "Cachepot Aliança", "preco": 4.2, "linha": "Encanto", "foto": "cardapio/d17.jpg"}, {"id": "d18", "nome": "Caixeta Nutella Crocante", "preco": 4.1, "linha": "Encanto", "foto": "cardapio/d18.jpg"}, {"id": "d19", "nome": "Bombom Caramelo Salgado", "preco": 3.5, "linha": "Encanto", "foto": "cardapio/d19.jpg"}, {"id": "d20", "nome": "Trufa de Coco com Castanhas", "preco": 6.1, "linha": "Nativa", "foto": "cardapio/d20.jpg"}, {"id": "d21", "nome": "Casadinho de Nozes", "preco": 3.5, "linha": "Nativa", "foto": "cardapio/d21.jpg"}, {"id": "d22", "nome": "Coração de Pistache", "preco": 5.75, "linha": "Nativa", "foto": "cardapio/d22.jpg"}, {"id": "d23", "nome": "Coração Pão de Mel", "preco": 3.5, "linha": "Nativa", "foto": "cardapio/d23.jpg"}, {"id": "d24", "nome": "Coração de Nuts", "preco": 3.5, "linha": "Nativa", "foto": "cardapio/d24.jpg"}, {"id": "d25", "nome": "Rosa de Champanhe", "preco": 4.5, "linha": "Alquimia", "foto": "cardapio/d25.jpg"}, {"id": "d26", "nome": "Copinho de Caipirinha", "preco": 4.75, "linha": "Alquimia", "foto": "cardapio/d26.jpg"}, {"id": "d27", "nome": "Suculenta de Pistache", "preco": 7.5, "linha": "Alquimia", "foto": "cardapio/d27.jpg"}, {"id": "d28", "nome": "Bombom Amarula", "preco": 4.75, "linha": "Alquimia", "foto": "cardapio/d28.jpg"}, {"id": "d29", "nome": "Copinho Moscow Mule", "preco": 4.15, "linha": "Alquimia", "foto": "cardapio/d29.jpg"}, {"id": "d30", "nome": "Cálice de Vinho", "preco": 5.9, "linha": "Alquimia", "foto": "cardapio/d30.jpg"}, {"id": "d31", "nome": "Cachepot Banana com Canela", "preco": 5.5, "linha": "Alquimia", "foto": "cardapio/d31.jpg"}, {"id": "d32", "nome": "Copinho Tiramisù", "preco": 4.75, "linha": "Alquimia", "foto": "cardapio/d32.jpg"}, {"id": "d33", "nome": "Tartelete Cúpula", "preco": 4.3, "linha": "Alquimia", "foto": "cardapio/d33.jpg"}, {"id": "d34", "nome": "Romeu e Julieta", "preco": 4.5, "linha": "Alquimia", "foto": "cardapio/d34.jpg"}, {"id": "d35", "nome": "Barrinha de Pimenta", "preco": 4.75, "linha": "Alquimia", "foto": "cardapio/d35.jpg"}, {"id": "d36", "nome": "Copinho Piña Colada", "preco": 5.1, "linha": "Alquimia", "foto": "cardapio/d36.jpg"}, {"id": "d37", "nome": "Caixeta de Maracujá", "preco": 5.2, "linha": "Colheita", "foto": "cardapio/d37.jpg"}, {"id": "d38", "nome": "Caixeta de Figo", "preco": 4.55, "linha": "Colheita", "foto": "cardapio/d38.jpg"}, {"id": "d39", "nome": "Mini Pavlova de Morango", "preco": 4.2, "linha": "Colheita", "foto": "cardapio/d39.jpg"}, {"id": "d40", "nome": "Copinho de Cereja", "preco": 4.7, "linha": "Colheita", "foto": "cardapio/d40.jpg"}, {"id": "d41", "nome": "Flor Siciliana", "preco": 5.9, "linha": "Colheita", "foto": "cardapio/d41.jpg"}, {"id": "d42", "nome": "Cestinha de Physalis", "preco": 6, "linha": "Colheita", "foto": "cardapio/d42.jpg"}, {"id": "d43", "nome": "Caixeta de Frutas Vermelhas", "preco": 6.2, "linha": "Colheita", "foto": "cardapio/d43.jpg"}, {"id": "d44", "nome": "Bowl de Frutas Silvestres", "preco": 5, "linha": "Colheita", "foto": "cardapio/d44.jpg"}, {"id": "d45", "nome": "Cesto de Uva", "preco": 3.9, "linha": "Colheita", "foto": "cardapio/d45.jpg"}];
+const LINHAS = ["Aveludado","Encanto","Nativa","Alquimia","Colheita"];
+let filtroLinha = "Todas";
 
 /* ---------- armazenamento ---------- */
 function carregarTodos(){ try{ return JSON.parse(localStorage.getItem(CHAVE)||"[]"); }catch(e){ return []; } }
@@ -299,14 +436,43 @@ let atual = null, atualId = null, passo = 1;
 
 function vazio(){
   const hoje = new Date(); const iso = hoje.toISOString().slice(0,10);
-  return { id: "c"+Date.now(), criado: Date.now(), alterado: Date.now(), num:"",
+  return { id: "c"+Date.now(), tipo:"contrato", criado: Date.now(), alterado: Date.now(), num:"",
+    orc:{indicada:""},
     cli:{nome:"",tel:"",email:"",cpf:"",rg:"",nasc:"",end:""},
     ev:{tipo:"Casamento",data:"",local:"",conv:"",inicio:"",montagem:"",onde:"",mesa:"",tamanho:"",foto:"",fotoTel:"",cerim:"",cerimTel:""},
-    itens:[{qtd:"",un:"un",desc:"",preco:""}],
+    sel:{},
+    itens:[],
     srv:{entrega:true,montagem:true,vEntrega:"",vMontagem:""},
-    pg:{total:"",modoEntrada:"pct",pct:30,entradaValor:"",dias:10,formas:["PIX"],parcelas:"1",obs:"",dataContrato:iso}
+    desc:{on:false,modo:"pct",pct:"",valor:""},
+    pg:{total:"",manualOn:false,manual:"",modoEntrada:"pct",pct:30,entradaValor:"",dias:10,formas:["PIX"],parcelas:"1",obs:"",dataContrato:iso}
   };
 }
+/* contratos feitos antes do cardápio: mantém o valor que já tinham */
+function migrar(c){
+  if(!c.tipo) c.tipo="contrato";
+  if(!c.orc) c.orc={indicada:""};
+  if(!c.sel) c.sel={};
+  if(!c.desc) c.desc={on:false,modo:"pct",pct:"",valor:""};
+  c.itens=(c.itens||[]).filter(i=>i.desc||i.qtd);
+  if(c.pg.manualOn===undefined){ c.pg.manualOn=false; c.pg.manual="";
+    if(num(c.pg.total) && !calcular(c).subtotal){ c.pg.manualOn=true; c.pg.manual=c.pg.total; } }
+  return c;
+}
+
+/* ---------- conta ---------- */
+function calcular(c){
+  const doces = Object.entries(c.sel||{}).reduce((a,[id,s])=>a+num(s.qtd)*num(s.preco),0);
+  const extras = (c.itens||[]).reduce((a,it)=>a+num(it.qtd||(it.un===""?1:0))*num(it.preco),0);
+  const entrega = c.srv.entrega? num(c.srv.vEntrega):0, montagem = c.srv.montagem? num(c.srv.vMontagem):0;
+  const subtotal = doces+extras+entrega+montagem;
+  let desconto=0;
+  if(c.desc && c.desc.on) desconto = c.desc.modo==="pct" ? subtotal*Math.min(num(c.desc.pct),100)/100 : Math.min(num(c.desc.valor),subtotal);
+  desconto=Math.round(desconto*100)/100;
+  const calc=Math.round((subtotal-desconto)*100)/100;
+  const total = c.pg.manualOn && num(c.pg.manual) ? num(c.pg.manual) : calc;
+  return {doces,extras,entrega,montagem,subtotal,desconto,calc,total};
+}
+function descontoFinal(c){ const k=calcular(c); return Math.max(Math.round((k.subtotal-k.total)*100)/100,0); }
 
 /* ---------- utilidades ---------- */
 const $ = s=>document.querySelector(s);
@@ -377,32 +543,50 @@ function mascarar(el){
 /* ---------- navegação ---------- */
 function mostrar(id){ document.querySelectorAll(".tela").forEach(t=>t.classList.toggle("ativa",t.id===id)); window.scrollTo(0,0); }
 function irInicio(){ atual=null; atualId=null; listar(); mostrar("tela-inicio"); }
+function ehOrc(c){ return (c||atual) && (c||atual).tipo==="orcamento"; }
 function novoContrato(){ atual=vazio(); atualId=atual.id; preencherForm(); irPasso(1); mostrar("tela-form"); }
-function editar(id, p){ const c=todos.find(x=>x.id===id); if(!c) return; atual=JSON.parse(JSON.stringify(c)); atualId=id; preencherForm(); irPasso(p||1); mostrar("tela-form"); }
-function duplicar(id){ const c=todos.find(x=>x.id===id); if(!c) return; atual=JSON.parse(JSON.stringify(c)); atual.id="c"+Date.now(); atual.criado=Date.now(); atual.num=""; atual.cli=vazio().cli; atual.ev.data=""; atual.pg.dataContrato=vazio().pg.dataContrato; atualId=atual.id; preencherForm(); irPasso(1); mostrar("tela-form"); toast("Cópia criada: troque os dados do cliente"); }
-function excluir(id){ const c=todos.find(x=>x.id===id); if(!c) return; if(!confirm(`Apagar o contrato de ${c.cli.nome||"sem nome"}? Isso não tem volta.`)) return; todos=todos.filter(x=>x.id!==id); salvarTodos(todos); listar(); toast("Contrato apagado"); }
-function ver(id){ const c=todos.find(x=>x.id===id); if(!c) return; atual=c; atualId=id; gerar(false); }
+function novoOrcamento(){ atual=vazio(); atual.tipo="orcamento"; atualId=atual.id; preencherForm(); irPasso(0); mostrar("tela-form"); }
+function editar(id, p){ const c=todos.find(x=>x.id===id); if(!c) return; atual=migrar(JSON.parse(JSON.stringify(c))); atualId=id; preencherForm(); irPasso(p ?? SEQ()[0]); mostrar("tela-form"); }
+function duplicar(id){ const c=todos.find(x=>x.id===id); if(!c) return; atual=migrar(JSON.parse(JSON.stringify(c))); atual.id="c"+Date.now(); atual.criado=Date.now(); atual.num=""; atual.cli=vazio().cli; atual.ev.data=""; atual.pg.dataContrato=vazio().pg.dataContrato; delete atual.virou; delete atual.origem; atualId=atual.id; preencherForm(); irPasso(SEQ()[0]); mostrar("tela-form"); toast("Cópia criada: troque os dados do cliente"); }
+function excluir(id){ const c=todos.find(x=>x.id===id); if(!c) return; if(!confirm(`Apagar ${ehOrc(c)?"o orçamento":"o contrato"} de ${c.cli.nome||"sem nome"}? Isso não tem volta.`)) return; todos=todos.filter(x=>x.id!==id); salvarTodos(todos); listar(); toast("Apagado"); }
+function ver(id){ const c=todos.find(x=>x.id===id); if(!c) return; atual=migrar(JSON.parse(JSON.stringify(c))); atualId=id; gerar(false); }
+function virarContrato(id){
+  const o=todos.find(x=>x.id===id); if(!o) return;
+  if(o.virou && todos.some(x=>x.id===o.virou)){ if(!confirm("Este orçamento já virou contrato. Abrir o contrato que já existe?")) return; editar(o.virou,1); return; }
+  const c=migrar(JSON.parse(JSON.stringify(o)));
+  c.tipo="contrato"; c.id="c"+Date.now(); c.criado=Date.now(); c.origem=o.id; c.pg.dataContrato=vazio().pg.dataContrato;
+  o.virou=c.id; todos.unshift(c); salvarTodos(todos);
+  atual=c; atualId=c.id; preencherForm(); irPasso(1); mostrar("tela-form");
+  toast("Doces e valor já vieram do orçamento. Complete os dados do cliente.");
+}
 
-const ROTULOS=["Passo 1 de 4 · Cliente","Passo 2 de 4 · Evento","Passo 3 de 4 · Doces","Passo 4 de 4 · Valor e pagamento"];
+/* passos: o orçamento usa 0,3,4,5; o contrato usa 1,2,3,4,5 */
+function SEQ(){ return ehOrc() ? [0,3,4,5] : [1,2,3,4,5]; }
+const NOMES={0:"Dados do orçamento",1:"Cliente",2:"Evento",3:"Doces do cardápio",4:"Fora do cardápio",5:"Valor e pagamento"};
 function irPasso(n){
-  passo=n;
+  passo=n; const seq=SEQ(), i=seq.indexOf(n), orc=ehOrc();
   document.querySelectorAll(".passo").forEach(p=>p.style.display = (+p.dataset.passo===n)?"block":"none");
-  document.querySelectorAll("#passos span").forEach((s,i)=>s.classList.toggle("feito",i<n));
-  $("#rotulo-passo").textContent=ROTULOS[n-1];
-  $("#btn-voltar").textContent = n===1 ? "Cancelar" : "Voltar";
-  $("#btn-avancar").textContent = n===4 ? "Gerar contrato" : "Próximo";
-  if(n===3) renderItens();
+  $("#passos").innerHTML = seq.map((_,k)=>`<span class="${k<=i?'feito':''}"></span>`).join("");
+  $("#rotulo-passo").textContent=`${orc?"Orçamento":"Contrato"} · passo ${i+1} de ${seq.length} · ${n===5&&orc?"Valor":NOMES[n]}`;
+  $("#btn-voltar").textContent = i===0 ? "Cancelar" : "Voltar";
+  $("#btn-avancar").textContent = n===5 ? (orc?"Gerar orçamento":"Gerar contrato") : "Próximo";
+  $("#titulo-valor").textContent = orc ? "Valor do orçamento" : "Valor do contrato";
+  $("#rot-total").textContent = orc ? "Total do orçamento" : "Valor total do contrato";
+  $("#so-orcamento").style.display = orc?"block":"none";
+  $("#so-contrato").style.display = orc?"none":"block";
+  if(n===3) renderCardapio();
+  if(n===4) renderItens();
   atualizarResumos();
   window.scrollTo(0,0);
 }
-function voltarPasso(){ if(passo===1){ guardar(); irInicio(); } else irPasso(passo-1); }
+function voltarPasso(){ const seq=SEQ(), i=seq.indexOf(passo); if(i===0){ guardar(); irInicio(); } else irPasso(seq[i-1]); }
 function avancarPasso(){
-  if(passo===1 && !atual.cli.nome.trim()){ marcarErro('[data-k="cli.nome"]',"Coloque pelo menos o nome do cliente"); return; }
-  if(passo===4){
-    if(!num(atual.pg.total)){ marcarErro('[data-k="pg.total"]',"Falta o valor total do contrato"); return; }
+  if((passo===0||passo===1) && !atual.cli.nome.trim()){ marcarErro(`.passo[data-passo="${passo}"] [data-k="cli.nome"]`,"Coloque pelo menos o nome"); return; }
+  if(passo===5){
+    if(!calcular(atual).total){ toast("O valor está zerado: marque doces ou coloque os valores"); return; }
     gerar(true); return;
   }
-  irPasso(passo+1);
+  const seq=SEQ(); irPasso(seq[seq.indexOf(passo)+1]);
 }
 function marcarErro(sel,msg){ const el=$(sel); el.classList.add("erro"); el.focus(); toast(msg); setTimeout(()=>el.classList.remove("erro"),2500); }
 
@@ -414,7 +598,63 @@ function preencherForm(){
   });
   $("#formas").innerHTML = FORMAS.map(f=>`<label><input type="checkbox" value="${f}" ${atual.pg.formas.includes(f)?"checked":""} onchange="mudarForma(this)"> ${f}</label>`).join("");
   setEntrada(atual.pg.modoEntrada, true);
+  setDesc(atual.desc.modo, true);
 }
+function setDesc(m, silencioso){
+  atual.desc.modo=m;
+  document.querySelectorAll("#seg-desc button").forEach(b=>b.classList.toggle("on",b.dataset.v===m));
+  $("#campo-desc-pct").style.display = m==="pct"?"block":"none";
+  $("#campo-desc-valor").style.display = m==="valor"?"block":"none";
+  if(!silencioso){ guardarDepois(); atualizarResumos(); }
+}
+
+/* ---------- cardápio ---------- */
+function semAcento(s){ return s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,""); }
+function renderCardapio(){
+  const nSel=Object.keys(atual.sel).length;
+  $("#filtro-linhas").innerHTML = ["Todas", `Marcados (${nSel})`, ...LINHAS].map(l=>{ const v=l.startsWith("Marcados")?"Marcados":l;
+    return `<button class="chip" style="${filtroLinha===v?'background:var(--azul);color:#fff;border-color:var(--azul)':''}" onclick="filtroLinha='${v}';renderCardapio()">${l}</button>`; }).join("");
+  const q=semAcento($("#busca-doce").value||"");
+  let html="";
+  LINHAS.forEach(linha=>{
+    const lista=CARDAPIO.filter(d=>d.linha===linha && (filtroLinha==="Todas"||filtroLinha===linha||(filtroLinha==="Marcados"&&atual.sel[d.id])) && (!q||semAcento(d.nome).includes(q)));
+    if(!lista.length) return;
+    html+=`<div class="linha-titulo">Linha ${linha}</div>`+lista.map(cartaoDoce).join("");
+  });
+  $("#lista-cardapio").innerHTML = html || `<p class="vazio">Nenhum doce encontrado.</p>`;
+  atualizarResumos();
+}
+function cartaoDoce(d){
+  const s=atual.sel[d.id];
+  return `<div class="doce ${s?'on':''}" id="doce-${d.id}">
+    <label class="doce-top"><img src="${d.foto}" alt="" loading="lazy">
+      <div class="doce-info"><b>${esc(d.nome)}</b><span>${moeda(d.preco)} a unidade</span></div>
+      <input type="checkbox" ${s?'checked':''} onchange="marcarDoce('${d.id}',this.checked)"></label>
+    ${s?`<div class="doce-qtd">
+      <div><span class="rot">Quantidade</span><div class="qtd-ctrl">
+        <button onclick="passoQtd('${d.id}',-25)" aria-label="menos 25">−</button>
+        <input inputmode="numeric" id="q-${d.id}" value="${esc(s.qtd)}" placeholder="0" oninput="mudarSel('${d.id}','qtd',this.value.replace(/\\D/g,''))">
+        <button onclick="passoQtd('${d.id}',25)" aria-label="mais 25">+</button></div></div>
+      <label class="preco-un"><span class="rot">Preço por unidade</span><input inputmode="decimal" value="${moeda(num(s.preco))}" oninput="mascararPreco(this,'${d.id}')"></label>
+      <div class="sub" id="sub-${d.id}">${subDoce(s)}</div>
+      <div class="alerta" id="al-${d.id}">${alertaQtd(s)}</div>
+    </div>`:""}
+  </div>`;
+}
+function subDoce(s){ const v=num(s.qtd)*num(s.preco); return v? "= "+moeda(v) : ""; }
+function alertaQtd(s){ const q=num(s.qtd); return q && q<25 ? "O pedido mínimo do cardápio é de 25 unidades por tipo." : ""; }
+function marcarDoce(id,on){
+  const d=CARDAPIO.find(x=>x.id===id);
+  if(on) atual.sel[id]={qtd:"",preco:d.preco}; else delete atual.sel[id];
+  const el=document.getElementById("doce-"+id); el.outerHTML=cartaoDoce(d);
+  if(on){ const q=document.getElementById("q-"+id); if(q) q.focus(); }
+  const f=$("#filtro-linhas .chip:nth-child(2)"); if(f) f.textContent=`Marcados (${Object.keys(atual.sel).length})`;
+  guardarDepois(); atualizarResumos();
+}
+function passoQtd(id,delta){ const s=atual.sel[id]; let q=num(s.qtd)+delta; if(q<0) q=0; s.qtd=String(q||""); $("#q-"+id).value=s.qtd; atualizarDoce(id); }
+function mudarSel(id,k,v){ atual.sel[id][k]=v; if(k==="qtd") $("#q-"+id).value=v; atualizarDoce(id); }
+function mascararPreco(el,id){ el.dataset.mask="moeda"; mascarar(el); atual.sel[id].preco=num(el.value); atualizarDoce(id); }
+function atualizarDoce(id){ const s=atual.sel[id]; $("#sub-"+id).textContent=subDoce(s); $("#al-"+id).textContent=alertaQtd(s); guardarDepois(); atualizarResumos(); }
 document.addEventListener("input", e=>{
   const el=e.target; if(!el.dataset || !el.dataset.k || !atual) return;
   if(el.dataset.mask) mascarar(el);
@@ -438,9 +678,9 @@ function setEntrada(m, silencioso){
 /* itens */
 function addItem(base){ atual.itens.push(Object.assign({qtd:"",un:"un",desc:"",preco:""},base)); renderItens(); guardarDepois();
   const ds=document.querySelectorAll("#itens .desc input"); const ult=ds[ds.length-1]; if(ult){ ult.focus(); ult.setSelectionRange(ult.value.length,ult.value.length); } }
-function remItem(i){ atual.itens.splice(i,1); if(!atual.itens.length) atual.itens.push({qtd:"",un:"un",desc:"",preco:""}); renderItens(); guardarDepois(); atualizarResumos(); }
+function remItem(i){ atual.itens.splice(i,1); renderItens(); guardarDepois(); atualizarResumos(); }
 function renderItens(){
-  $("#itens").innerHTML = atual.itens.map((it,i)=>`
+  $("#itens").innerHTML = (atual.itens.length ? "" : `<p class="vazio" style="margin:0 0 10px">Nenhum item fora do cardápio. Se não houver, é só tocar em Próximo.</p>`) + atual.itens.map((it,i)=>`
     <div class="item">
       <div class="linha1">
         <label class="campo">Qtd.<input inputmode="decimal" value="${esc(it.qtd)}" oninput="mudarItem(${i},'qtd',this.value)"></label>
@@ -451,34 +691,42 @@ function renderItens(){
         <label class="campo desc">Doce<input list="sugestoes" value="${esc(it.desc)}" placeholder="Ex.: alpino de avelã" oninput="mudarItem(${i},'desc',this.value)"></label>
       </div>
       <div class="linha2">
-        <label class="campo">Valor por ${it.un==="kg"?"kg":"unidade"} <span class="opc">(opc.)</span><input inputmode="decimal" data-mask="moeda" value="${esc(it.preco)}" placeholder="R$ 0,00" oninput="mascarar(this);mudarItem(${i},'preco',this.value)"></label>
+        <label class="campo">Valor ${it.un==="kg"?"por kg":it.un==="un"?"por unidade":"do item"}<input inputmode="decimal" data-mask="moeda" value="${esc(it.preco)}" placeholder="R$ 0,00" oninput="mascarar(this);mudarItem(${i},'preco',this.value)"></label>
         <div class="sub" id="sub-${i}">${subtotalTxt(it)}</div>
         <button class="btn fant peq" onclick="remItem(${i})" aria-label="Remover">Remover</button>
       </div>
     </div>`).join("");
 }
 function mudarItem(i,k,v){ atual.itens[i][k]=v; if(k==="un") renderItens(); else { const s=document.getElementById("sub-"+i); if(s) s.textContent=subtotalTxt(atual.itens[i]); } guardarDepois(); atualizarResumos(); }
-function subtotalTxt(it){ const q=num(it.qtd),p=num(it.preco); return (q&&p)? "= "+moeda(q*p) : ""; }
-function somaItens(){ let s=atual.itens.reduce((a,it)=>a+num(it.qtd)*num(it.preco),0); if(atual.srv.entrega) s+=num(atual.srv.vEntrega); if(atual.srv.montagem) s+=num(atual.srv.vMontagem); return s; }
-function usarSoma(){ const s=somaItens(); atual.pg.total=moeda(s); $('[data-k="pg.total"]').value=atual.pg.total; guardarDepois(); atualizarResumos(); }
+function subtotalTxt(it){ const q=it.un===""?1:num(it.qtd),p=num(it.preco); return (q&&p)? "= "+moeda(q*p) : ""; }
 
-function valorEntrada(c){ const t=num(c.pg.total); return c.pg.modoEntrada==="pct" ? t*(num(c.pg.pct)/100) : num(c.pg.entradaValor); }
+function valorEntrada(c){ const t=calcular(c).total; return c.pg.modoEntrada==="pct" ? t*(num(c.pg.pct)/100) : num(c.pg.entradaValor); }
 
 function atualizarResumos(){
   if(!atual) return;
-  // doces
-  const unid = atual.itens.filter(i=>i.un==="un").reduce((a,i)=>a+num(i.qtd),0);
-  const kg = atual.itens.filter(i=>i.un==="kg").reduce((a,i)=>a+num(i.qtd),0);
-  const conv = num(atual.ev.conv); const soma=somaItens();
-  let r = `<b>${unid.toLocaleString("pt-BR")}</b> doces`;
-  if(kg) r += ` · <b>${kg.toLocaleString("pt-BR")} kg</b> de bolo`;
-  if(conv && unid) r += ` · <b>${(unid/conv).toLocaleString("pt-BR",{maximumFractionDigits:1})}</b> doces por convidado (${conv} convidados)`;
-  if(soma) r += `<br>Soma pelos valores: <b>${moeda(soma)}</b>`;
-  $("#resumo-doces").innerHTML = r;
-  // pagamento
-  const t=num(atual.pg.total);
+  const k=calcular(atual);
+  atual.pg.total = k.total ? moeda(k.total) : "";
+  // barra de baixo: doces e valor parcial
+  const unid = Object.values(atual.sel).reduce((a,s)=>a+num(s.qtd),0) + atual.itens.filter(i=>i.un==="un").reduce((a,i)=>a+num(i.qtd),0);
+  const tipos = Object.keys(atual.sel).length + atual.itens.filter(i=>i.desc&&i.un==="un").length;
+  const conv = num(atual.ev.conv);
+  let barra="";
+  if(passo>=3 && (unid||k.subtotal)){
+    barra = `<b>${tipos}</b> ${tipos===1?"tipo":"tipos"} · <b>${unid.toLocaleString("pt-BR")}</b> doces`;
+    if(conv && unid) barra += ` · ${(unid/conv).toLocaleString("pt-BR",{maximumFractionDigits:1})} por convidado`;
+    barra += ` · <b>${moeda(passo===5?k.total:k.subtotal)}</b>`;
+  }
+  $("#barra-soma").innerHTML = barra;
+  // conta do passo 5
+  const linhas=[["Doces do cardápio",k.doces],["Fora do cardápio",k.extras],["Entrega",k.entrega],["Montagem de mesa",k.montagem]].filter(l=>l[1]);
+  $("#conta").innerHTML = (linhas.length? linhas.map(l=>`<div><span>${l[0]}</span><span>${moeda(l[1])}</span></div>`).join("") : `<div><span>Nada marcado ainda</span><span>R$ 0,00</span></div>`)
+    + `<div class="sub-total"><span>Subtotal</span><span>${moeda(k.subtotal)}</span></div>`
+    + (k.desconto? `<div class="desc"><span>Desconto${atual.desc.modo==="pct"?" ("+num(atual.desc.pct).toLocaleString("pt-BR")+"%)":""}</span><span>− ${moeda(k.desconto)}</span></div>` : "");
+  $("#bloco-desconto").style.display = atual.desc.on ? "grid" : "none";
+  $("#campo-manual").style.display = atual.pg.manualOn ? "block" : "none";
+  $("#total-final").textContent = moeda(k.total);
+  const t=k.total;
   $("#extenso-total").textContent = t? "("+reaisExtenso(t)+")" : "";
-  const b=$("#btn-usar-soma"); if(soma && Math.abs(soma-t)>0.004){ b.style.display="inline-flex"; b.textContent=`Usar a soma dos doces: ${moeda(soma)}`; } else b.style.display="none";
   if(t){
     const e=valorEntrada(atual), saldo=Math.max(t-e,0), n=+atual.pg.parcelas||1;
     const quit = menosDias(atual.ev.data, atual.pg.dias);
@@ -492,7 +740,7 @@ function atualizarResumos(){
 let _g; function guardarDepois(){ clearTimeout(_g); _g=setTimeout(guardar,400); }
 function guardar(){
   if(!atual) return;
-  const temAlgo = atual.cli.nome || atual.ev.data || atual.itens.some(i=>i.desc) || atual.pg.total;
+  const temAlgo = atual.cli.nome || atual.ev.data || Object.keys(atual.sel).length || atual.itens.some(i=>i.desc) || atual.pg.total;
   if(!temAlgo) return;
   atual.alterado=Date.now();
   const i=todos.findIndex(x=>x.id===atual.id);
@@ -504,13 +752,19 @@ function guardar(){
 function listar(){
   const q=($("#busca").value||"").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"");
   const ord=[...todos].sort((a,b)=>(a.ev.data||"9999").localeCompare(b.ev.data||"9999"));
-  const f=ord.filter(c=>{ const txt=(c.cli.nome+" "+dataBR(c.ev.data)+" "+c.ev.local+" "+c.ev.tipo).toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,""); return txt.includes(q); });
-  $("#lista").innerHTML = f.length ? f.map(c=>`
-    <li><div class="info"><div class="nome">${esc(c.cli.nome||"(sem nome)")}</div>
-      <div class="meta">${esc(c.ev.tipo)}${c.ev.data?" · "+dataBR(c.ev.data):""}${c.ev.local?" · "+esc(c.ev.local):""}${num(c.pg.total)?" · "+moeda(num(c.pg.total)):""}</div></div>
-      <div class="acoes"><button class="btn peq" onclick="ver('${c.id}')">Ver</button><button class="btn sec peq" onclick="editar('${c.id}')">Editar</button><button class="btn sec peq" onclick="duplicar('${c.id}')">Duplicar</button><button class="btn perigo peq" onclick="excluir('${c.id}')">Apagar</button></div></li>`).join("")
-    : `<li class="vazio">${todos.length?"Nada encontrado.":"Nenhum contrato ainda. Toque em <b>Gerar novo contrato</b>."}</li>`;
+  document.querySelectorAll("#seg-lista button").forEach(b=>b.classList.toggle("on",b.dataset.v===filtroLista));
+  const f=ord.filter(c=>{ const tipo=c.tipo||"contrato"; if(filtroLista!=="todos" && tipo!==filtroLista) return false;
+    const txt=(c.cli.nome+" "+dataBR(c.ev.data)+" "+c.ev.local+" "+c.ev.tipo).toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,""); return txt.includes(q); });
+  $("#lista").innerHTML = f.length ? f.map(c=>{ const orc=c.tipo==="orcamento";
+    const etq = orc ? (c.virou? `<span class="etiqueta ok">Virou contrato</span>` : `<span class="etiqueta orc">Orçamento</span>`) : `<span class="etiqueta ctr">Contrato</span>`;
+    return `
+    <li><div class="info"><div class="nome">${etq}${esc(c.cli.nome||"(sem nome)")}</div>
+      <div class="meta">${c.ev.data?dataBR(c.ev.data):"sem data"}${c.ev.conv?" · "+esc(c.ev.conv)+" convidados":""}${c.ev.local?" · "+esc(c.ev.local):""}${num(c.pg.total)?" · "+moeda(num(c.pg.total)):""}</div></div>
+      <div class="acoes"><button class="btn peq" onclick="ver('${c.id}')">Ver</button>${orc?`<button class="btn peq" onclick="virarContrato('${c.id}')">Virar contrato</button>`:""}<button class="btn sec peq" onclick="editar('${c.id}')">Editar</button><button class="btn sec peq" onclick="duplicar('${c.id}')">Duplicar</button><button class="btn perigo peq" onclick="excluir('${c.id}')">Apagar</button></div></li>`; }).join("")
+    : `<li class="vazio">${todos.length?"Nada encontrado.":"Nada salvo ainda. Comece por <b>Fazer orçamento</b> ou <b>Gerar novo contrato</b>."}</li>`;
 }
+let filtroLista="todos";
+function setLista(v){ filtroLista=v; listar(); }
 
 /* ---------- contrato ---------- */
 function linhaItem(it){
@@ -526,7 +780,7 @@ function textoServico(c){
 }
 function listaFormas(f){ const l=f.map(x=>x==="Transferência"?"transferência bancária":x==="Cartão de crédito"?"cartão de crédito":x==="Dinheiro"?"dinheiro":x==="Boleto"?"boleto bancário":x); return l.length<2? (l[0]||"") : l.slice(0,-1).join(", ")+" ou "+l.at(-1); }
 function textoPagamento(c){
-  const t=num(c.pg.total), e=valorEntrada(c), saldo=Math.max(t-e,0), n=+c.pg.parcelas||1;
+  const t=calcular(c).total, e=valorEntrada(c), saldo=Math.max(t-e,0), n=+c.pg.parcelas||1;
   const quit=menosDias(c.ev.data,c.pg.dias); const formas=listaFormas(c.pg.formas);
   let s=`Entrada de R$ ${moedaSemSimbolo(e)} (${reaisExtenso(e)})`;
   if(saldo>0.004){
@@ -597,9 +851,38 @@ function clausulas(c){
 const NEGRITO = ["Contratado:", "NÃO NOS RESPONSABILIZAMOS"];
 
 /* O contrato é descrito uma vez, em blocos; a tela e o PDF desenham os mesmos blocos. */
+function blocosOrcamento(c){
+  const k=calcular(c), dsc=descontoFinal(c), P=true;
+  const B=[{t:"logo"},{t:"titOrc",x:"ORÇAMENTO"}];
+  const conv=num(c.ev.conv), ind=num(c.orc&&c.orc.indicada);
+  B.push({t:"linhaOrc", x:"Noiva: "+(c.cli.nome||"")});
+  B.push({t:"linhaOrc", x:"Data: "+dataBR(c.ev.data)});
+  if(conv) B.push({t:"linhaOrc", x:"Convidados: "+conv.toLocaleString("pt-BR")});
+  B.push({t:"linhaOrc", x:"Local: "+(c.ev.local||"")});
+  if(ind) B.push({t:"linhaOrc", x:`Quantidade indicada de doces: ${ind.toLocaleString("pt-BR")} doces`});
+  B.push({t:"espaco"});
+  const linhas=[];
+  CARDAPIO.filter(d=>c.sel && c.sel[d.id]).forEach(d=>{ const s=c.sel[d.id], q=num(s.qtd), p=num(s.preco);
+    linhas.push({x:`${q||""} ${d.nome}`.trim(), dir: P && q && p ? `${moeda(p)} un. = ${moeda(q*p)}` : ""}); });
+  (c.itens||[]).forEach(it=>{ const txt=linhaItem(it); if(!txt) return; const q=it.un===""?1:num(it.qtd), p=num(it.preco);
+    linhas.push({x:txt, dir: P && q && p ? (it.un===""? moeda(p) : `${moeda(p)} ${it.un==="kg"?"kg":"un."} = ${moeda(q*p)}`) : ""}); });
+  const srv=textoServico(c);
+  if(srv){ const v=k.entrega+k.montagem; linhas.push({x:srv, dir: P && v ? moeda(v) : ""}); }
+  linhas.forEach(l=>B.push({t:"item2", x:l.x, dir:l.dir}));
+  B.push({t:"espaco"});
+  if(dsc>0.004){
+    B.push({t:"item2", x:"Subtotal", dir:moeda(k.subtotal)});
+    B.push({t:"item2", x:"Desconto"+(c.desc.on&&c.desc.modo==="pct"&&!c.pg.manualOn?` (${num(c.desc.pct).toLocaleString("pt-BR")}%)`:""), dir:"- "+moeda(dsc)});
+  }
+  B.push({t:"totalOrc", x:"Total: "+moeda(k.total)});
+  B.push({t:"rodape", x:"WhatsApp (62) 99122-0206 · @flordapaixao.patisserie"});
+  return B;
+}
 function blocos(c){
-  const t=num(c.pg.total);
-  const itens = c.itens.map(linhaItem).filter(Boolean); const srv=textoServico(c); if(srv) itens.push(srv);
+  if(c.tipo==="orcamento") return blocosOrcamento(c);
+  const t=calcular(c).total, dsc=descontoFinal(c);
+  const doCardapio = CARDAPIO.filter(d=>c.sel && c.sel[d.id]).map(d=>{ const q=String(c.sel[d.id].qtd||"").trim(); return q? `${q} ${d.nome}` : d.nome; });
+  const itens = [...doCardapio, ...(c.itens||[]).map(linhaItem).filter(Boolean)]; const srv=textoServico(c); if(srv) itens.push(srv);
   const dc = c.pg.dataContrato ? c.pg.dataContrato.split("-") : null;
   const horarios = `Horário de início da festa: ${hora(c.ev.inicio)}\nMontagem de mesa: ${hora(c.ev.montagem)}`;
   const B=[];
@@ -628,7 +911,7 @@ function blocos(c){
   B.push({t:"centro", x:"ANEXO"});
   B.push({t:"p", x:"A contratada prestará os seguintes serviços:"});
   itens.forEach((i,k)=>B.push({t:"item", x:i, ultimo:k===itens.length-1}));
-  B.push({t:"p", x:`§1º: Pelos itens acima descritos fica estipulado a quantia de R$ ${moedaSemSimbolo(t)} (${reaisExtenso(t)}).`});
+  B.push({t:"p", x:`§1º: Pelos itens acima descritos fica estipulado a quantia de R$ ${moedaSemSimbolo(t)} (${reaisExtenso(t)})${dsc>0.004?`, já aplicado desconto de R$ ${moedaSemSimbolo(dsc)} (${reaisExtenso(dsc)})`:""}.`});
   B.push({t:"p", x:"§2º: Caso o contratante não opte pela entrega ou montagem, a contratada se exime de qualquer responsabilidade quanto ao acondicionamento, armazenamento e manuseio dos produtos."});
   B.push({t:"p", x:"§3º: Forma de pagamento: "+textoPagamento(c)});
   return B;
@@ -637,6 +920,7 @@ function blocos(c){
 /* ---------- tela ---------- */
 function htmlNegrito(s){ let h=esc(s); NEGRITO.forEach(n=>{ h=h.split(esc(n)).join(`<b>${esc(n)}</b>`); }); return h; }
 function montarContrato(c){
+  if(c.tipo==="orcamento") return htmlOrcamento(c);
   let h="", anexo=false;
   blocos(c).forEach(b=>{
     if(b.t==="logo") h+=`<img class="logo" src="${LOGO}" alt="">`;
@@ -647,6 +931,12 @@ function montarContrato(c){
     else if(b.t==="assin") h+=`<div class="assin">${ASSINATURA?`<div class="com-img"><img src="${ASSINATURA}" alt=""><div class="linha">CONTRATADA</div></div>`:`<div><div class="linha">CONTRATADA</div></div>`}<div><div class="linha">CONTRATANTE</div></div></div>`;
     else if(b.t==="novaPagina"){ h+=`<div class="anexo">`; anexo=true; }
     else if(b.t==="centro") h+=`<h2>${esc(b.x)}</h2>`;
+    else if(b.t==="titOrc") h+=`<p class="tit-orc">${esc(b.x)}</p>`;
+    else if(b.t==="linhaOrc") h+=`<p class="linha-orc"${b.antes?' style="margin-top:1em"':""}>${esc(b.x)}</p>`;
+    else if(b.t==="espaco") h+=`<div style="height:.8em"></div>`;
+    else if(b.t==="item2") h+=`<div class="item2"><span>${esc(b.x)}</span><span>${esc(b.dir||"")}</span></div>`;
+    else if(b.t==="totalOrc") h+=`<p class="total-orc">${esc(b.x)}</p>`;
+    else if(b.t==="rodape") h+=`<p class="rodape">${esc(b.x)}</p>`;
     else if(b.t==="item") h+=`<p class="item-anexo"${b.ultimo?' style="margin-bottom:1.4em"':""}>${esc(b.x)}</p>`;
   });
   if(anexo) h+=`</div>`;
@@ -655,6 +945,7 @@ function montarContrato(c){
 
 /* ---------- PDF ---------- */
 function gerarPDF(c){
+  if(c.tipo==="orcamento") return pdfOrcamento(c);
   const { jsPDF } = window.jspdf;
   const doc = new jsPDF({unit:"mm", format:"a4", compress:true});
   const PW=210, PH=297, ML=30, MR=20, MT=25, MB=20, W=PW-ML-MR, PT=0.3528;
@@ -722,6 +1013,18 @@ function gerarPDF(c){
     else if(b.t==="novaPagina"){ doc.addPage(); y=MT; }
     else if(b.t==="centro"){ fonte(false,tam); doc.text(b.x, ML+W/2, y+tam*PT*0.8, {align:"center"}); y+=alt(tam)+6; }
     else if(b.t==="item") paragrafo(b.x,{justificar:false, depois: b.ultimo?6:0.6});
+    else if(b.t==="titOrc"){ y+=2; fonte(true,16); doc.text(b.x, ML+W/2, y+16*PT*0.8, {align:"center", charSpace:0.8}); y+=alt(16)+6; }
+    else if(b.t==="linhaOrc") paragrafo(b.x,{justificar:false, antes:b.antes||0, depois:1});
+    else if(b.t==="espaco") y+=4;
+    else if(b.t==="item2"){
+      fonte(false,tam); const dw=b.dir? doc.getTextWidth(b.dir)+6 : 0;
+      const {linhas, esp}=quebrar(fichas(b.x), W-dw, tam);
+      linhas.forEach((l,i)=>{ cabe(alt(tam)); const base=y+tam*PT*0.8; escreverLinha(l, ML, W-dw, tam, false, esp, base);
+        if(i===0 && b.dir){ fonte(false,tam); doc.text(b.dir, ML+W, base, {align:"right"}); } y+=alt(tam); });
+      y+=1;
+    }
+    else if(b.t==="totalOrc"){ y+=3; cabe(alt(13)); fonte(true,13); doc.text(b.x, ML, y+13*PT*0.8); y+=alt(13)+2; }
+    else if(b.t==="rodape"){ y+=10; cabe(alt(10)); fonte(false,10); doc.setTextColor(90); doc.text(b.x, ML+W/2, y+10*PT*0.8, {align:"center"}); doc.setTextColor(0); y+=alt(10); }
   });
   doc.setProperties({title:nomeArquivo(c), author:"Flor da Paixão Pâtisserie"});
   return new File([doc.output("blob")], nomeArquivo(c)+".pdf", {type:"application/pdf"});
@@ -738,9 +1041,155 @@ async function compartilharPDF(){
 function baixarPDF(){ if(!pdfPronto()) return; baixarArquivo(gerarPDF(atual)); }
 function baixarArquivo(f){ const a=document.createElement("a"); a.href=URL.createObjectURL(f); a.download=f.name; document.body.appendChild(a); a.click(); a.remove(); setTimeout(()=>URL.revokeObjectURL(a.href),4000); }
 
-function nomeArquivo(c){ const primeiro=(c.cli.nome||"CLIENTE").trim().split(/\s+/)[0].toUpperCase(); return `CONTRATO ${primeiro}${c.ev.data?" "+dataCurta(c.ev.data):""}`; }
+/* ---------- orçamento no visual do cardápio ---------- */
+const FONTES = {"gv": "fontes/GreatVibes.ttf", "ed": "fontes/ErasDemi.ttf", "el": "fontes/ErasLight.ttf"};   // {gv, ed, el}: endereço ou data: de cada fonte
+const COR = {fundo:"#182033", painel:"#283147", linha:"#3a4560", claro:"#e3eaf7", ouro:"#f9b234"};
+const INSTRUCOES = [
+  "Os valores se referem à unidade.",
+  "O pedido mínimo de cada tipo é de 25 unidades.",
+  "Os doces têm como cortesia a forminha de acetato (caso queira outra forminha, solicitar valores ou trazer a forminha até o ateliê).",
+  "Verificar junto ao decorador o tamanho da mesa para que esteja de acordo com a quantidade de doces contratada.",
+  "As peças, caso sejam do decorador, devem estar de acordo com os doces escolhidos.",
+  "A entrega é feita em carro com ar-condicionado e a montagem da mesa é feita pela chef."
+];
+let FONTES_B64 = null;
+(function carregarFontes(){
+  const b64 = buf => { let s=""; const u=new Uint8Array(buf); for(let i=0;i<u.length;i+=0x8000) s+=String.fromCharCode.apply(null,u.subarray(i,i+0x8000)); return btoa(s); };
+  Promise.all(["gv","ed","el"].map(k=>fetch(FONTES[k]).then(r=>r.arrayBuffer()).then(b64)))
+    .then(([gv,ed,el])=>{ FONTES_B64={gv,ed,el}; }).catch(()=>{});
+  const css=document.createElement("style");
+  css.textContent = `@font-face{font-family:"FdpVibes";src:url("${FONTES.gv}") format("truetype")}
+@font-face{font-family:"FdpErasDemi";src:url("${FONTES.ed}") format("truetype")}
+@font-face{font-family:"FdpErasLight";src:url("${FONTES.el}") format("truetype")}`;
+  document.head.appendChild(css);
+})();
+
+function dadosOrcamento(c){
+  const k=calcular(c), dsc=descontoFinal(c);
+  const linhas=[];
+  CARDAPIO.filter(d=>c.sel && c.sel[d.id]).forEach(d=>{ const s=c.sel[d.id], q=num(s.qtd), p=num(s.preco);
+    linhas.push({qtd:q?q.toLocaleString("pt-BR"):"", nome:d.nome, det:"", un:p?moeda(p):"", sub:q&&p?moeda(q*p):""}); });
+  (c.itens||[]).forEach(it=>{ let txt=(it.desc||"").trim(); if(!txt) return;
+    const q=num(it.qtd), p=num(it.preco);
+    let nome=txt, det=""; const i=txt.indexOf("("); if(i>0){ nome=txt.slice(0,i).trim(); det=txt.slice(i).trim(); }
+    if(it.un==="kg"){ nome=nome.replace(/^de\s+/i,""); }
+    nome=nome.charAt(0).toUpperCase()+nome.slice(1);
+    const qtd = it.un==="kg" ? (q? q.toLocaleString("pt-BR")+" kg" : "") : it.un==="" ? "" : (q? q.toLocaleString("pt-BR") : "");
+    const un = p ? moeda(p)+(it.un==="kg"?"/kg":"") : "";
+    const sub = p ? moeda(it.un===""?p:q*p) : "";
+    linhas.push({qtd, nome, det, un, sub}); });
+  const srv=textoServico(c);
+  if(srv){ const v=k.entrega+k.montagem; linhas.push({qtd:"", nome:srv, det:"", un:"", sub:v?moeda(v):""}); }
+  const conv=num(c.ev.conv), ind=num(c.orc&&c.orc.indicada);
+  const info=[["Noiva",c.cli.nome||""],["Data do evento",dataBR(c.ev.data)],["Convidados",conv?conv.toLocaleString("pt-BR"):""],["Local",c.ev.local||""],["Doces indicados",ind?ind.toLocaleString("pt-BR")+" doces":""]].filter(x=>x[1]);
+  const descRot = "Desconto"+(c.desc&&c.desc.on&&c.desc.modo==="pct"&&!c.pg.manualOn?` (${num(c.desc.pct).toLocaleString("pt-BR")}%)`:"");
+  return {info, linhas, subtotal:k.subtotal, desconto:dsc, descRot, total:k.total};
+}
+
+/* tela */
+function htmlOrcamento(c){
+  const o=dadosOrcamento(c);
+  return `<div class="orc">
+    <div class="orc-logo"><img src="${LOGO}" alt=""></div>
+    <div class="orc-tit">Orçamento</div>
+    <div class="orc-info">${o.info.map(([r,v])=>`<div><span>${esc(r)}</span><b>${esc(v)}</b></div>`).join("")}</div>
+    <table class="orc-tab"><thead><tr><th>Qtd</th><th>Doce</th><th>Valor un.</th><th>Subtotal</th></tr></thead><tbody>
+    ${o.linhas.map(l=>`<tr><td class="q">${esc(l.qtd)}</td><td class="n">${esc(l.nome)}${l.det?`<small>${esc(l.det)}</small>`:""}</td><td class="v">${esc(l.un)}</td><td class="v">${esc(l.sub)}</td></tr>`).join("")}
+    </tbody></table>
+    <div class="orc-tot">
+      ${o.desconto>0.004?`<div><span>Subtotal</span><b>${moeda(o.subtotal)}</b></div><div><span>${esc(o.descRot)}</span><b>- ${moeda(o.desconto)}</b></div>`:""}
+      <div class="grande"><span>Total</span><b>${moeda(o.total)}</b></div>
+    </div>
+    <div class="orc-inst"><div class="t">Informações adicionais</div><ul>${INSTRUCOES.map(i=>`<li>${esc(i)}</li>`).join("")}</ul></div>
+    <div class="orc-rod">WhatsApp (62) 99122-0206 · @flordapaixao.patisserie</div>
+  </div>`;
+}
+
+/* PDF */
+function pdfOrcamento(c){
+  const { jsPDF } = window.jspdf;
+  const doc = new jsPDF({unit:"mm", format:"a4", compress:true});
+  const temFonte = !!FONTES_B64;
+  if(temFonte){
+    doc.addFileToVFS("gv.ttf",FONTES_B64.gv); doc.addFont("gv.ttf","Vibes","normal");
+    doc.addFileToVFS("ed.ttf",FONTES_B64.ed); doc.addFont("ed.ttf","ErasD","normal");
+    doc.addFileToVFS("el.ttf",FONTES_B64.el); doc.addFont("el.ttf","ErasL","normal");
+  }
+  const F = {vibes: temFonte?["Vibes","normal"]:["times","italic"], demi: temFonte?["ErasD","normal"]:["helvetica","bold"], light: temFonte?["ErasL","normal"]:["helvetica","normal"]};
+  const fonte=(f,s,cor)=>{ doc.setFont(...F[f]); doc.setFontSize(s); doc.setTextColor(cor||COR.claro); };
+  const PW=210, PH=297, M=18, W=PW-2*M, PT=0.3528;
+  const fundo=()=>{ doc.setFillColor(COR.fundo); doc.rect(0,0,PW,PH,"F"); };
+  let y=0;
+  const novaPagina=()=>{ doc.addPage(); fundo(); y=20; };
+  const cabe=h=>{ if(y+h>PH-16) novaPagina(); };
+  const o=dadosOrcamento(c);
+  fundo();
+  // logo num círculo claro
+  doc.setFillColor("#ffffff"); doc.circle(PW/2, 24, 14, "F");
+  const lw=25, lh=lw*283/306; doc.addImage(LOGO,"PNG", PW/2-lw/2, 24-lh/2, lw, lh);
+  y=39;
+  fonte("vibes",34); doc.text("Orçamento", PW/2, y+9, {align:"center"}); y+=14;
+  doc.setDrawColor(COR.ouro); doc.setLineWidth(0.4); doc.line(PW/2-25, y, PW/2+25, y); y+=6;
+  // painel de dados
+  const col=3, cw=(W-12)/col, linhasInfo=Math.ceil(o.info.length/col), ph=6+linhasInfo*12;
+  doc.setFillColor(COR.painel); doc.roundedRect(M, y, W, ph, 3, 3, "F");
+  o.info.forEach(([r,v],i)=>{ const cx=M+6+(i%col)*cw, cy=y+6+Math.floor(i/col)*12;
+    fonte("demi",8,COR.ouro); doc.text(r.toUpperCase(), cx, cy+2, {charSpace:0.4});
+    fonte("light",11); doc.text(doc.splitTextToSize(v, cw-4)[0], cx, cy+7); });
+  y+=ph+7;
+  // tabela
+  const X={q:M+2, n:M+22, un:M+W-34, sub:M+W-2};
+  const cabecalho=()=>{ fonte("demi",8,COR.ouro);
+    doc.text("QTD",X.q,y,{charSpace:0.4}); doc.text("DOCE",X.n,y,{charSpace:0.4}); doc.text("VALOR UN.",X.un,y,{align:"right",charSpace:0.4}); doc.text("SUBTOTAL",X.sub,y,{align:"right",charSpace:0.4});
+    y+=2.5; doc.setDrawColor(COR.ouro); doc.setLineWidth(0.3); doc.line(M,y,M+W,y); y+=2; };
+  cabecalho();
+  const larguraNome = X.un - X.n - 22;
+  o.linhas.forEach(l=>{
+    fonte("vibes",16); const nl=doc.splitTextToSize(l.nome, larguraNome);
+    fonte("light",8); const dl=l.det? doc.splitTextToSize(l.det, larguraNome):[];
+    const h = 2.2 + nl.length*5.8 + dl.length*3.2 + 1.2;
+    if(y+h>PH-16){ novaPagina(); cabecalho(); }
+    const base=y+5.9;
+    fonte("demi",11); doc.text(l.qtd, X.q, base);
+    fonte("vibes",16); nl.forEach((t,i)=>doc.text(t, X.n, base+i*5.8));
+    if(dl.length){ fonte("light",8); dl.forEach((t,i)=>doc.text(t, X.n, base+(nl.length-1)*5.8+3.8+i*3.2)); }
+    fonte("demi",11,COR.ouro); if(l.un) doc.text(l.un, X.un, base, {align:"right"}); if(l.sub) doc.text(l.sub, X.sub, base, {align:"right"});
+    y+=h; doc.setDrawColor(COR.linha); doc.setLineWidth(0.2); doc.line(M,y,M+W,y);
+  });
+  y+=5;
+  // totais
+  const tw=86, tx=M+W-tw, th=(o.desconto>0.004?15:0)+17;
+  cabe(th+4);
+  doc.setFillColor(COR.painel); doc.roundedRect(tx, y, tw, th, 3, 3, "F");
+  let ty=y+7;
+  if(o.desconto>0.004){
+    fonte("light",11); doc.text("Subtotal", tx+6, ty); fonte("demi",11,COR.ouro); doc.text(moeda(o.subtotal), tx+tw-6, ty, {align:"right"}); ty+=6;
+    fonte("light",11); doc.text(o.descRot, tx+6, ty); fonte("demi",11,COR.ouro); doc.text("- "+moeda(o.desconto), tx+tw-6, ty, {align:"right"}); ty+=4;
+    doc.setDrawColor(COR.linha); doc.line(tx+6, ty, tx+tw-6, ty); ty+=5;
+  }
+  fonte("vibes",24); doc.text("Total", tx+6, ty+7);
+  fonte("demi",17,COR.ouro); doc.text(moeda(o.total), tx+tw-6, ty+6, {align:"right"});
+  y+=th+5;
+  // informações adicionais
+  fonte("light",8.5); const blocos=INSTRUCOES.map(t=>doc.splitTextToSize(t, W-16));
+  const ih=11+blocos.reduce((a,b)=>a+b.length*3.6+1,0)+2;
+  if(y+ih>PH-12) novaPagina();
+  doc.setFillColor(COR.painel); doc.roundedRect(M, y, W, ih, 3, 3, "F");
+  fonte("vibes",19); doc.text("Informações adicionais", M+6, y+8);
+  let iy=y+13.5;
+  blocos.forEach(b=>{ fonte("demi",8.5,COR.ouro); doc.text("•", M+6, iy); fonte("light",8.5); b.forEach((t,i)=>doc.text(t, M+10, iy+i*3.6)); iy+=b.length*3.6+1; });
+  // rodapé em todas as páginas
+  const n=doc.getNumberOfPages();
+  for(let p=1;p<=n;p++){ doc.setPage(p); fonte("light",9,"#aab4c8"); doc.text("WhatsApp (62) 99122-0206  ·  @flordapaixao.patisserie", PW/2, PH-7, {align:"center"}); }
+  doc.setProperties({title:nomeArquivo(c), author:"Flor da Paixão Pâtisserie"});
+  return new File([doc.output("blob")], nomeArquivo(c)+".pdf", {type:"application/pdf"});
+}
+
+function nomeArquivo(c){ const primeiro=(c.cli.nome||"CLIENTE").trim().split(/\s+/)[0].toUpperCase(); return `${c.tipo==="orcamento"?"ORÇAMENTO":"CONTRATO"} ${primeiro}${c.ev.data?" "+dataCurta(c.ev.data):""}`; }
 function gerar(salvar){
   if(salvar) guardar();
+  $("#btn-virar").style.display = ehOrc(atual) ? "inline-flex" : "none";
+  $("#folha").classList.toggle("folha-orc", ehOrc(atual));
   $("#folha").innerHTML = montarContrato(atual);
   document.title = nomeArquivo(atual);
   mostrar("tela-contrato");
@@ -752,14 +1201,14 @@ let pedidoInstalar=null;
 (function(){
   const instalado = matchMedia("(display-mode: standalone)").matches || navigator.standalone;
   const web = location.protocol.startsWith("http");
+  if(web && "serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});
   if(instalado) return;
   const ua=navigator.userAgent, ios=/iPhone|iPad|iPod/.test(ua) || (navigator.platform==="MacIntel" && navigator.maxTouchPoints>1);
   const txt = !web
     ? "Para ter o ícone na tela inicial, abra o Gerador pelo link (não pelo arquivo). Pelo arquivo ele funciona igual, só não vira ícone."
-    : ios ? "No iPhone/iPad, abra no Safari, toque em Compartilhar (quadrado com a seta) e depois em <b>Adicionar à Tela de Início</b>."
-          : "Toque no botão abaixo. Se ele não aparecer, abra o menu do Chrome (⋮) e toque em <b>Adicionar à tela inicial</b>.";
+    : ios ? "Assim ele abre em tela cheia, sem a barra do navegador. No Safari, toque em Compartilhar (quadrado com a seta) e depois em <b>Adicionar à Tela de Início</b>. Depois, abra sempre pelo ícone."
+          : "Assim ele abre em tela cheia, sem a barra do navegador. Toque no botão abaixo; se ele não aparecer, abra o menu do Chrome (⋮) e toque em <b>Instalar app</b> ou <b>Adicionar à tela inicial</b>. Depois, abra sempre pelo ícone.";
   $("#instalar-txt").innerHTML=txt; $("#cartao-instalar").style.display="block";
-  if(web && "serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});
   window.addEventListener("beforeinstallprompt", e=>{ e.preventDefault(); pedidoInstalar=e; $("#btn-instalar").style.display="inline-flex"; });
   window.addEventListener("appinstalled", ()=>{ $("#cartao-instalar").style.display="none"; toast("Pronto! O ícone está na tela inicial."); });
 })();
